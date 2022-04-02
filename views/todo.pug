@@ -1,0 +1,19 @@
+doctype
+html
+    head
+        title Todo list
+        link(rel="stylesheet", href="style.css")
+    body
+        h1 TODO List
+        table
+            tr
+                th ID
+                th Title
+                th Due Date
+            tbody
+                each todo in todos
+                    tr
+                        td #{todo.ID}
+                        td #{todo.Title}
+                        td #{todo.Deadline}
+
