@@ -8,7 +8,7 @@ var pool = mysql.createPool({
     database: process.env.DATABASE_NAME
 });
 
-if (process.env.DEBUG.toUpperCase() === "TRUE") {
+if (process.env.DEBUG !== undefined && process.env.DEBUG.toUpperCase() === "TRUE") {
     pool.on('acquire', function (connection) {
         console.log('Connection %d acquired', connection.threadId);
     });
