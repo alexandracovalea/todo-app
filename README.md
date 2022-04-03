@@ -26,14 +26,29 @@ appropriate permissions.
 
 ### 4. Download source code
 
-Download the source code and place it under `/srv/www/todo-app` .
+Download the source code and place it directly under `/srv/www/todo-app`
 
-Using git is an option:
+```
+/srv/www/todo-app/
+├── app.js
+├── bin
+├── db.js
+├── LICENSE.TXT
+├── node_modules
+├── package.json
+├── package-lock.json
+├── public
+├── README.md
+├── routes
+└── views
+```
+
+You can use git for downloading:
 ```bash
 git clone https://github.com/bbusuioc/todo-app
 ```
 
-Another option would be to use wget (search link for downloading as an archive
+Or you can also use wget (search link for downloading as an archive
 on Github).
 
 ### 5. Install productive dependencies
